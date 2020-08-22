@@ -1,0 +1,19 @@
+.welcome {
+  flex: 0.7;
+  display: grid;
+  place-items: center;
+}
+
+@media screen and (max-width: 800px) {
+  .welcome {
+    flex: 1;
+  }
+}
+
+.welcome__container {
+  text-align: center;
+}
+
+.welcome__container > p {
+  padding-top: 10px;
+}

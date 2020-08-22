@@ -1,0 +1,124 @@
+.chat {
+  flex: 0.7;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 800px) {
+  .chat {
+    flex: 1;
+  }
+}
+
+.chat__header {
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  /* border-bottom: 1px solid lightgray; */
+  border-left: 1px solid lightgray;
+}
+
+.chat__headerInfo {
+  flex: 1;
+  padding-left: 20px;
+}
+
+.chat__headerInfo > h3 {
+  margin-bottom: 3px;
+  font-weight: 500;
+}
+
+.chat__headerInfo > p {
+  color: gray;
+}
+
+.chat__headerRight {
+  display: flex;
+  justify-content: space-between;
+  min-width: 100px;
+}
+
+.chat__headerRight > .toggle {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .chat__headerRight > .toggle {
+    display: block;
+  }
+}
+
+.chat__body {
+  flex: 1;
+  background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+  background-position: center;
+  background-repeat: repeat;
+  padding: 30px;
+  overflow-y: scroll;
+}
+
+.chat__message {
+  font-size: 16px;
+  position: relative;
+  padding: 10px;
+  background-color: white;
+  margin-bottom: 30px;
+  width: fit-content;
+  border-radius: 10px;
+}
+
+.chat__reciever {
+  margin-left: auto;
+  background-color: #dcf8c6;
+}
+
+.chat__name {
+  position: absolute;
+  top: -15px;
+  font-weight: 800;
+  font-size: xx-small;
+}
+
+.chat__timestamp {
+  margin-left: 10px;
+  font-size: xx-small;
+}
+
+.chat__footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 62px;
+  border-top: 1px solid lightgray;
+}
+
+.chat__footer > form {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+
+.chat__footer > form > input {
+  flex: 0.99;
+  border-radius: 20px;
+  height: 27px;
+  padding: 10px;
+  border: none;
+}
+
+.chat__footer > form > input:focus {
+  outline: none;
+}
+
+.chat__footer > form > button {
+  width: auto;
+}
+
+.chat__footer > form > button .MuiSvgIcon-root {
+  color: gray;
+}
+
+.chat__footer > .MuiSvgIcon-root {
+  padding: 10px;
+  color: gray;
+}
