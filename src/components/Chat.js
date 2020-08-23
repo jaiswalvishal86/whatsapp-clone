@@ -118,7 +118,11 @@ function Chat({ history }) {
               messages[
                 messages.length - 1
               ]?.timestamp?.toDate()
-            ).toUTCString()}
+            )
+              .toUTCString()
+              .split(" ")
+              .slice(0, 4)
+              .join(" ")}
           </p>
         </div>
         <div className="chat__headerRight">
@@ -156,7 +160,7 @@ function Chat({ history }) {
             <span className="chat__timestamp">
               {new Date(
                 message.timestamp?.toDate()
-              ).toUTCString()}
+              ).toTimeString()}
             </span>
           </p>
         ))}

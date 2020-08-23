@@ -38,13 +38,22 @@
   min-width: 100px;
 }
 
-.chat__headerRight > .toggle {
+.chat__headerRight > button:last-child {
   display: none;
 }
 
 @media screen and (max-width: 800px) {
-  .chat__headerRight > .toggle {
+  /* .chat__headerRight > button {
+    display: none;
+  } */
+
+  .chat__headerRight > button {
+    display: none;
+  }
+
+  .chat__headerRight > button:last-child {
     display: block;
+    margin-left: 80px;
   }
 }
 
